@@ -13,7 +13,7 @@ const Home = () => {
     <div className={styles.container}>
       <Head>
         <title>Crypto Dashboard</title>
-        <meta name="description" content="Created by Mendoh" />
+        <meta name="description" content="Created by Mando" />
       </Head>
     </div>
   )
