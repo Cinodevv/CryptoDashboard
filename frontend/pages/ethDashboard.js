@@ -21,8 +21,8 @@ const dashboard = () => {
 
     useEffect(() =>{
         shortenAndSetAddress()    
-        getTokenAmtHandler()
-        getTransactionCountHandler()
+        GetTokenAmtHandler()
+        GetTransactionCountHandler()
     })
 
    const shortenAndSetAddress = () => {
@@ -46,7 +46,7 @@ const dashboard = () => {
         console.log(err.message)
     }
    }
-    const connectWalletHandler = async () => {
+    const ConnectWalletHandler = async () => {
         if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
             try 
             {
@@ -55,14 +55,14 @@ const dashboard = () => {
                 setWeb3(web3)
                 const accounts = await web3.eth.getAccounts()
                 setAddress(accounts[0])
-                shortenAndSetAddress() 
-                getContract()   
-                getTokenAmtHandler()
-                getGasAmtHandler()
-                getTransactionCountHandler()
-                getTotalSupplyHandler()
-                setConnectStatus("Wallet Connected")
-                setConnectMsg("Wallet connected successfully.")
+                ShortenAndSetAddress() 
+                GetContract()   
+                GetTokenAmtHandler()
+                GetGasAmtHandler()
+                GetTransactionCountHandler()
+                GetTotalSupplyHandler()
+                SetConnectStatus("Wallet Connected")
+                SetConnectMsg("Wallet connected successfully.")
             } catch (err) {
                 setError(err.message)
                 console.log(err.message)
@@ -74,7 +74,7 @@ const dashboard = () => {
 
     }
 
-    const getTokenAmtHandler = async () => {
+    const GetTokenAmtHandler = async () => {
         try        
         {
         if (address!=undefined){
@@ -98,7 +98,7 @@ const dashboard = () => {
     }
     }
 
-    const transact = () => {
+    const Transact = () => {
         try        
         {
             web3.eth.sendTransaction(
@@ -115,7 +115,7 @@ const dashboard = () => {
     }
     }
 
-    const getTransactionCountHandler = async () => {
+    const GetTransactionCountHandler = async () => {
         try        
         {
         if (address!=undefined){
@@ -128,7 +128,7 @@ const dashboard = () => {
     }
     }
 
-    const getGasAmtHandler = async () => {
+    const GetGasAmtHandler = async () => {
         try        
         {
         const gasAmt = await web3.eth.getGasPrice()
@@ -140,7 +140,7 @@ const dashboard = () => {
     }
     }
 
-    const getTotalSupplyHandler = async () => {
+    const GetTotalSupplyHandler = async () => {
         try        
         {
         const totalSupply = 119427265
@@ -155,7 +155,7 @@ return(
 <body>
     <div className={styles.top}>
         <h1>Mando Crypto Dashboard</h1>
-         <button className={styles.connecter} onClick={connectWalletHandler} >{connectStatus}</button>
+         <button className={styles.connecter} onClick={ConnectWalletHandler} >{connectStatus}</button>
     </div>
     <div className={styles.mainEthNet}>
         <div className="columns">
@@ -312,7 +312,7 @@ return(
                                     </div>
                                 </div>
                                 <footer className="card-footer">
-                                    <button className="button is-link card-footer-item" onClick={transact} >Send</button>
+                                    <button className="button is-link card-footer-item" onClick={Transact} >Send</button>
                                 </footer>
                             </div>
                     </div>
