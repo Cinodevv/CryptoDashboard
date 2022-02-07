@@ -20,12 +20,12 @@ const dashboard = () => {
     const [transactionCount, setTransactionCount] = useState("0")
 
     useEffect(() =>{
-        shortenAndSetAddress()    
+        ShortenAndSetAddress()    
         GetTokenAmtHandler()
         GetTransactionCountHandler()
     })
 
-   const shortenAndSetAddress = () => {
+   const ShortenAndSetAddress = () => {
        try
        {
         if (address!=undefined){
