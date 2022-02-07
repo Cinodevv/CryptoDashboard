@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 const Home = () => {
   const router = useRouter()
   useEffect(() => {
-    router.push('/ethDashboard');
+    router.push('/mandoWeb3Landing');
   },[])
   return (
     <div className={styles.container}>
