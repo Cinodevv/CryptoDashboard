@@ -22,7 +22,7 @@ const LandingPage = () => {
     const goToNft = () => {
         try
         {
-            window.location.href="/https://opensea.io/";
+            window.location.href="https://opensea.io/";
         }
         catch (err) {
          setError(err.message)

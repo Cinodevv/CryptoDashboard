@@ -1,5 +1,6 @@
 .bodyPage {
     background-image: url("../public/stars.jpg");
+    background-repeat: no-repeat;
     font-size:50px;
     min-height: 1147px;
     color: white;
