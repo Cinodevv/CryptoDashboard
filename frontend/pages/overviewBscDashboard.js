@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import { getBEP20Contract } from '../blockchain/bscContract'
 
-const overviewBscDashboard = () => {
+const OverviewBscDashboard = () => {
 
     const [error, setError] = useState('')
     const [web3, setWeb3] = useState(undefined)
@@ -221,4 +221,4 @@ return(
 )
 }
 
-export default overviewBscDashboard
+export default OverviewBscDashboard

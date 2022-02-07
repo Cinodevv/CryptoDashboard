@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import { getERC20Contract } from '../blockchain/ethContract'
 
-const overviewEthDashboard = () => {
+const OverviewEthDashboard = () => {
 
     const [error, setError] = useState('')
     const [web3, setWeb3] = useState(undefined)
@@ -423,4 +423,4 @@ return(
 )
 }
 
-export default overviewEthDashboard
+export default OverviewEthDashboard
