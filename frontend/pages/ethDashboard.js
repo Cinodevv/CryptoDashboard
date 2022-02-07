@@ -3,7 +3,7 @@ import styles from '../styles/echange.module.css'
 import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 
-const dashboard = () => {
+const EthDashboard = () => {
 
     const [error, setError] = useState('')
     const [successMsg, setSuccessMsg] = useState('')
@@ -324,4 +324,4 @@ return(
 )
 }
 
-export default dashboard
+export default EthDashboard
