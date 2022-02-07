@@ -2,8 +2,9 @@ import 'bulma/css/bulma.css'
 import styles from '../styles/echange.module.css'
 import { useState, useEffect } from 'react'
 import Web3 from 'web3'
+import { getERC20Contract } from '../blockchain/ethContract'
 
-const EthDashboard = () => {
+const LinkDashboard = () => {
     const [error, setError] = useState('')
     const [web3, setWeb3] = useState(undefined)
     const [address, setAddress] = useState(undefined)
@@ -11,45 +12,18 @@ const EthDashboard = () => {
     const [connectMsg, setConnectMsg] = useState("Connect your wallet to check your balances!")
     const [connectStatus, setConnectStatus] = useState("Connect Wallet")
     const [tokenAmt, setTokenAmt] = useState("...")
-    const [gasAmt, setGasAmt] = useState("...")
+    const [gasAmt] = useState("NA")
+    const [totalSupply] = useState("1,000,000,000 LINK")
     const [sendToAddress, setSendToAddress] = useState(undefined)
+    const [vmContract, setVmContract] = useState(undefined)
     const [sendingAmt, setSendingAmt] = useState(undefined)
-    const [transactionCount, setTransactionCount] = useState("0")
-    const [totalSupply] = useState("119,477,198 ETHER")
+    const [transactionCount] = useState("NA")
 
     useEffect(() => {
-        shortenAndSetAddress()
-        getTokenAmtHandler()
-        getTransactionCountHandler()
+            shortenAndSetAddress()
+            getTokenAmtHandler()
     })
 
-    // connects to metamask
-    const ConnectWalletHandler = async () => {
-        if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
-            try {
-                await window.ethereum.request({ method: "eth_requestAccounts" })
-                web3 = new Web3(window.ethereum)
-                setWeb3(web3)
-                const accounts = await web3.eth.getAccounts()
-                setAddress(accounts[0])
-                shortenAndSetAddress()
-                getTokenAmtHandler()
-                getTransactionCountHandler()
-                getGasAmtHandler()
-                setConnectMsg("")
-                setConnectStatus("Wallet Connected")
-            } catch (err) {
-                setError(err.message)
-                console.log(err.message)
-            }
-        }
-        else {
-            console.log("Please install metamask")
-        }
-
-    }
-
-    //shortens retrieved address
     const shortenAndSetAddress = () => {
         try {
             if (address != undefined) {
@@ -73,31 +47,31 @@ const EthDashboard = () => {
             console.log(err.message)
         }
     }
-    
-    // returns specific tokens owned
-    const getTokenAmtHandler = async () => {
-        try {
-            if (address != undefined) {
-                const tokenAmt = await web3.eth.getBalance(address)
-                const newtokenAmt = web3.utils.fromWei(tokenAmt, "ether")
-                const cutEthArray = Array.from(newtokenAmt);
-                const newSpliceEth =
-                    cutEthArray[0] +
-                    cutEthArray[1] +
-                    cutEthArray[2] +
-                    cutEthArray[3] +
-                    cutEthArray[4] +
-                    cutEthArray[5]
-                setTokenAmt(newSpliceEth)
+    const connectWalletHandler = async () => {
+        if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
+            try {
+                await window.ethereum.request({ method: "eth_requestAccounts" })
+                web3 = new Web3(window.ethereum)
+                setWeb3(web3)
+                const accounts = await web3.eth.getAccounts()
+                setAddress(accounts[0])
+                shortenAndSetAddress()
+                getContract()
+                getTokenAmtHandler()
+                setConnectMsg("")
+                setConnectStatus("Wallet Connected")
+            } catch (err) {
+                setError(err.message)
+                console.log(err.message)
             }
-        } catch (err) {
-            setError(err.message)
-            console.log(err.message)
         }
+        else {
+            console.log("Please install metamask")
+        }
+
     }
 
-    // sends transaction to send out
-    const Transact = () => {
+    const transact = () => {
         try {
             web3.eth.sendTransaction(
                 {
@@ -114,35 +88,35 @@ const EthDashboard = () => {
         }
     }
 
-    // returns total transactions from address
-    const getTransactionCountHandler = async () => {
+    const getContract = async () => {
+        try {
+            const contract = getERC20Contract("0x01be23585060835e02b77ef475b0cc51aa1e0709", web3)
+            setVmContract(contract)
+        }
+        catch (err) {
+            setError(err.message)
+            console.log(err.message)
+        }
+    }
+    const getTokenAmtHandler = async () => {
         try {
             if (address != undefined) {
-                const transactionCount = await web3.eth.getTransactionCount(address)
-                setTransactionCount(transactionCount)
+                const linkAmt = await vmContract.methods.balanceOf(address).call()
+                linkAmt = linkAmt / (10 ** 18)
+                setTokenAmt(linkAmt)
             }
         } catch (err) {
             setError(err.message)
             console.log(err.message)
         }
     }
-    // returns gas prices
-    const getGasAmtHandler = async () => {
-        try {
-            const gasAmt = await web3.eth.getGasPrice()
-            gasAmt = web3.utils.fromWei(gasAmt, "ether")
-            setGasAmt(gasAmt + " ETHER")
-        } catch (err) {
-            setError(err.message)
-            console.log(err.message)
-        }
-    }
+
 
     return (
         <body>
             <div className={styles.top}>
                 <h1>Mando Crypto Dashboard</h1>
-                <button className={styles.connecter} onClick={ConnectWalletHandler} >{connectStatus}</button>
+                <button className={styles.connecter} onClick={connectWalletHandler} >{connectStatus}</button>
             </div>
             <div className={styles.mainEthNet}>
                 <div className="columns">
@@ -178,19 +152,19 @@ const EthDashboard = () => {
                                         Overview
                                     </a>
 
-                                    <a className="navbar-item" href="ethDashboard">
+                                    <a class="navbar-item" href="ethDashboard">
                                         Eth
                                     </a>
-                                    <a className="navbar-item" href="linkDashboard">
+                                    <a class="navbar-item" href="linkDashboard">
                                         Link
                                     </a>
-                                    <a className="navbar-item" href="daiDashboard">
+                                    <a class="navbar-item" href="daiDashboard">
                                         Dai
                                     </a>
-                                    <a className="navbar-item" href="usdtDashboard">
+                                    <a class="navbar-item" href="usdtDashboard">
                                         Usdt
                                     </a>
-                                    <a className="navbar-item" href="shibaDashboard">
+                                    <a class="navbar-item" href="shibaDashboard">
                                         Shiba
                                     </a>
                                     <div className="navbar-item has-dropdown is-hoverable">
@@ -230,13 +204,13 @@ const EthDashboard = () => {
                             <div className="tile is-ancestor has-text-centered">
                                 <div className="tile is-parent  mt-4">
                                     <article className="tile is-child box">
-                                        <img src="/eth.png" width="50" height="50" alt="eth logo"></img>
+                                        <img src="/link.png" width="75" height="75" alt="link logo"></img>
                                     </article>
                                 </div>
                                 <div className="tile is-parent  mt-4">
                                     <article className="tile is-child box">
-                                        <p className="title">ETH</p>
-                                        <p className="subtitle">Ethereum</p>
+                                        <p className="title">LINK</p>
+                                        <p className="subtitle">Chainlink</p>
                                     </article>
                                 </div>
                                 <div className="tile is-parent mt-4">
@@ -284,20 +258,20 @@ const EthDashboard = () => {
                             <div className="column is-full">
                                 <div className="card" >
                                     <header className="card-header">
-                                        <p className="card-header-title">Send An Eth Transaction</p>
+                                        <p className="card-header-title">Send A Link Transaction</p>
                                     </header>
                                     <div className="card-table is-centered">
                                         <div className="content is-centered">
                                             <table className="table is-fullwidth is-striped is-centered">
                                                 <tbody>
                                                     <input onChange={event => setSendToAddress(event.target.value)} className="input" name="type" placeholder="Send to" />
-                                                    <input onChange={event => setSendingAmt(event.target.value)} className="input" name="type" placeholder="Amount (eth)" />
+                                                    <input onChange={event => setSendingAmt(event.target.value)} className="input" name="type" placeholder="Amount (link)" />
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
                                     <footer className="card-footer">
-                                        <button className="button is-link card-footer-item" onClick={Transact} >Send</button>
+                                        <button className="button is-link card-footer-item" onClick={transact} >Send</button>
                                     </footer>
                                 </div>
                             </div>
@@ -309,4 +283,4 @@ const EthDashboard = () => {
     )
 }
 
-export default EthDashboard
+export default LinkDashboard
