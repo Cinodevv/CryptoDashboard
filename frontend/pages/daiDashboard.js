@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import { getERC20Contract } from '../blockchain/ethContract'
 
-const LinkDashboard = () => {
+const dashboard = () => {
+
     const [error, setError] = useState('')
     const [web3, setWeb3] = useState(undefined)
     const [address, setAddress] = useState(undefined)
@@ -13,15 +14,15 @@ const LinkDashboard = () => {
     const [connectStatus, setConnectStatus] = useState("Connect Wallet")
     const [tokenAmt, setTokenAmt] = useState("...")
     const [gasAmt] = useState("NA")
-    const [totalSupply] = useState("1,000,000,000 LINK")
+    const [totalSupply] = useState("9,762,480,777.85 DAI.")
     const [sendToAddress, setSendToAddress] = useState(undefined)
     const [vmContract, setVmContract] = useState(undefined)
     const [sendingAmt, setSendingAmt] = useState(undefined)
     const [transactionCount] = useState("0")
 
     useEffect(() => {
-            shortenAndSetAddress()
-            getTokenAmtHandler()
+        shortenAndSetAddress()
+        getTokenAmtHandler()
     })
 
     const shortenAndSetAddress = () => {
@@ -55,8 +56,8 @@ const LinkDashboard = () => {
                 setWeb3(web3)
                 const accounts = await web3.eth.getAccounts()
                 setAddress(accounts[0])
-                shortenAndSetAddress()
                 getContract()
+                shortenAndSetAddress()
                 getTokenAmtHandler()
                 setConnectMsg("")
                 setConnectStatus("Wallet Connected")
@@ -70,10 +71,9 @@ const LinkDashboard = () => {
         }
 
     }
-
     const transact = () => {
         try {
-            web3.eth.sendTransaction(
+            vmContract.methods.sendTransaction(
                 {
                     from: address,
                     to: sendToAddress,
@@ -90,7 +90,7 @@ const LinkDashboard = () => {
 
     const getContract = async () => {
         try {
-            const contract = getERC20Contract("0x01be23585060835e02b77ef475b0cc51aa1e0709", web3)
+            const contract = getERC20Contract("0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa", web3)
             setVmContract(contract)
         }
         catch (err) {
@@ -101,9 +101,9 @@ const LinkDashboard = () => {
     const getTokenAmtHandler = async () => {
         try {
             if (address != undefined) {
-                const linkAmt = await vmContract.methods.balanceOf(address).call()
-                linkAmt = linkAmt / (10 ** 18)
-                setTokenAmt(linkAmt)
+                const daiAmt = await vmContract.methods.balanceOf(address).call()
+                daiAmt = daiAmt / (10 ** 18)
+                setTokenAmt(daiAmt)
             }
         } catch (err) {
             setError(err.message)
@@ -204,13 +204,13 @@ const LinkDashboard = () => {
                             <div className="tile is-ancestor has-text-centered">
                                 <div className="tile is-parent  mt-4">
                                     <article className="tile is-child box">
-                                        <img src="/link.png" width="75" height="75" alt="link logo"></img>
+                                        <img src="/dai.png" width="75" height="75" alt="dai logo"></img>
                                     </article>
                                 </div>
                                 <div className="tile is-parent  mt-4">
                                     <article className="tile is-child box">
-                                        <p className="title">LINK</p>
-                                        <p className="subtitle">Chainlink</p>
+                                        <p className="title">Dai</p>
+                                        <p className="subtitle">StableCoin</p>
                                     </article>
                                 </div>
                                 <div className="tile is-parent mt-4">
@@ -258,14 +258,14 @@ const LinkDashboard = () => {
                             <div className="column is-full">
                                 <div className="card" >
                                     <header className="card-header">
-                                        <p className="card-header-title">Send A Link Transaction</p>
+                                        <p className="card-header-title">Send A Dai Transaction</p>
                                     </header>
                                     <div className="card-table is-centered">
                                         <div className="content is-centered">
                                             <table className="table is-fullwidth is-striped is-centered">
                                                 <tbody>
                                                     <input onChange={event => setSendToAddress(event.target.value)} className="input" name="type" placeholder="Send to" />
-                                                    <input onChange={event => setSendingAmt(event.target.value)} className="input" name="type" placeholder="Amount (link)" />
+                                                    <input onChange={event => setSendingAmt(event.target.value)} className="input" name="type" placeholder="Amount (dai)" />
                                                 </tbody>
                                             </table>
                                         </div>
@@ -283,4 +283,4 @@ const LinkDashboard = () => {
     )
 }
 
-export default LinkDashboard
+export default dashboard

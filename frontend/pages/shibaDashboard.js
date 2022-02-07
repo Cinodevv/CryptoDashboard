@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import { getERC20Contract } from '../blockchain/ethContract'
 
-const LinkDashboard = () => {
+const dashboard = () => {
+
     const [error, setError] = useState('')
     const [web3, setWeb3] = useState(undefined)
     const [address, setAddress] = useState(undefined)
@@ -13,15 +14,15 @@ const LinkDashboard = () => {
     const [connectStatus, setConnectStatus] = useState("Connect Wallet")
     const [tokenAmt, setTokenAmt] = useState("...")
     const [gasAmt] = useState("NA")
-    const [totalSupply] = useState("1,000,000,000 LINK")
+    const [totalSupply] = useState("NA")
     const [sendToAddress, setSendToAddress] = useState(undefined)
     const [vmContract, setVmContract] = useState(undefined)
     const [sendingAmt, setSendingAmt] = useState(undefined)
     const [transactionCount] = useState("0")
 
     useEffect(() => {
-            shortenAndSetAddress()
-            getTokenAmtHandler()
+        shortenAndSetAddress()
+        getTokenAmtHandler()
     })
 
     const shortenAndSetAddress = () => {
@@ -32,9 +33,6 @@ const LinkDashboard = () => {
                     cutAddressArray[0] +
                     cutAddressArray[1] +
                     cutAddressArray[2] +
-                    cutAddressArray[3] +
-                    cutAddressArray[4] +
-                    cutAddressArray[5] +
                     "..." +
                     cutAddressArray[38] +
                     cutAddressArray[39] +
@@ -73,15 +71,15 @@ const LinkDashboard = () => {
 
     const transact = () => {
         try {
-            web3.eth.sendTransaction(
-                {
-                    from: address,
-                    to: sendToAddress,
-                    value: web3.utils.toWei(sendingAmt, "ether"),
-                }, function (err, transactionHash) {
-                    if (!err)
-                        console.log(transactionHash + " success");
-                });
+            vmContract.methods.
+                vmContract.methods.tranfer(
+                    {
+                        to: sendToAddress,
+                        value: sendingAmt * (10 ** 18),
+                    }, function (err, transactionHash) {
+                        if (!err)
+                            console.log(transactionHash + " success");
+                    });
         } catch (err) {
             setError(err.message)
             console.log(err.message)
@@ -90,7 +88,7 @@ const LinkDashboard = () => {
 
     const getContract = async () => {
         try {
-            const contract = getERC20Contract("0x01be23585060835e02b77ef475b0cc51aa1e0709", web3)
+            const contract = getERC20Contract("0xA9Dd75D6ADc6be40393ecDd71Dc134D1DBC624D1", web3)
             setVmContract(contract)
         }
         catch (err) {
@@ -101,16 +99,15 @@ const LinkDashboard = () => {
     const getTokenAmtHandler = async () => {
         try {
             if (address != undefined) {
-                const linkAmt = await vmContract.methods.balanceOf(address).call()
-                linkAmt = linkAmt / (10 ** 18)
-                setTokenAmt(linkAmt)
+                const shibaAmt = await vmContract.methods.balanceOf(address).call()
+                shibaAmt = shibaAmt / (10 ** 18)
+                setTokenAmt(shibaAmt)
             }
         } catch (err) {
             setError(err.message)
             console.log(err.message)
         }
     }
-
 
     return (
         <body>
@@ -204,13 +201,13 @@ const LinkDashboard = () => {
                             <div className="tile is-ancestor has-text-centered">
                                 <div className="tile is-parent  mt-4">
                                     <article className="tile is-child box">
-                                        <img src="/link.png" width="75" height="75" alt="link logo"></img>
+                                        <img src="/shiba.png" width="75" height="75" alt="shiba logo"></img>
                                     </article>
                                 </div>
                                 <div className="tile is-parent  mt-4">
                                     <article className="tile is-child box">
-                                        <p className="title">LINK</p>
-                                        <p className="subtitle">Chainlink</p>
+                                        <p className="title">Shiba</p>
+                                        <p className="subtitle">Shiba</p>
                                     </article>
                                 </div>
                                 <div className="tile is-parent mt-4">
@@ -258,14 +255,14 @@ const LinkDashboard = () => {
                             <div className="column is-full">
                                 <div className="card" >
                                     <header className="card-header">
-                                        <p className="card-header-title">Send A Link Transaction</p>
+                                        <p className="card-header-title">Send A Shiba Transaction</p>
                                     </header>
                                     <div className="card-table is-centered">
                                         <div className="content is-centered">
                                             <table className="table is-fullwidth is-striped is-centered">
                                                 <tbody>
                                                     <input onChange={event => setSendToAddress(event.target.value)} className="input" name="type" placeholder="Send to" />
-                                                    <input onChange={event => setSendingAmt(event.target.value)} className="input" name="type" placeholder="Amount (link)" />
+                                                    <input onChange={event => setSendingAmt(event.target.value)} className="input" name="type" placeholder="Amount (shib)" />
                                                 </tbody>
                                             </table>
                                         </div>
@@ -283,4 +280,4 @@ const LinkDashboard = () => {
     )
 }
 
-export default LinkDashboard
+export default dashboard
