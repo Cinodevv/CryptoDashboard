@@ -19,9 +19,9 @@ const EthDashboard = () => {
     const [totalSupply] = useState("119,477,198 ETHER")
 
     useEffect(() => {
-        ShortenAndSetAddress()
-        GetTokenAmtHandler()
-        GetTransactionCountHandler()
+        shortenAndSetAddress()
+        getTokenAmtHandler()
+        getTransactionCountHandler()
     })
 
     // connects to metamask
@@ -33,10 +33,10 @@ const EthDashboard = () => {
                 setWeb3(web3)
                 const accounts = await web3.eth.getAccounts()
                 setAddress(accounts[0])
-                ShortenAndSetAddress()
-                GetTokenAmtHandler()
-                GetTransactionCountHandler()
-                GetGasAmtHandler()
+                shortenAndSetAddress()
+                getTokenAmtHandler()
+                getTransactionCountHandler()
+                getGasAmtHandler()
                 setConnectMsg("")
                 setConnectStatus("Wallet Connected")
             } catch (err) {
@@ -51,7 +51,7 @@ const EthDashboard = () => {
     }
 
     //shortens retrieved address
-    const ShortenAndSetAddress = () => {
+    const shortenAndSetAddress = () => {
         try {
             if (address != undefined) {
                 const cutAddressArray = Array.from(address);
@@ -76,7 +76,7 @@ const EthDashboard = () => {
     }
     
     // returns specific tokens owned
-    const GetTokenAmtHandler = async () => {
+    const getTokenAmtHandler = async () => {
         try {
             if (address != undefined) {
                 const tokenAmt = await web3.eth.getBalance(address)
@@ -116,7 +116,7 @@ const EthDashboard = () => {
     }
 
     // returns total transactions from address
-    const GetTransactionCountHandler = async () => {
+    const getTransactionCountHandler = async () => {
         try {
             if (address != undefined) {
                 const transactionCount = await web3.eth.getTransactionCount(address)
@@ -128,7 +128,7 @@ const EthDashboard = () => {
         }
     }
     // returns gas prices
-    const GetGasAmtHandler = async () => {
+    const getGasAmtHandler = async () => {
         try {
             const gasAmt = await web3.eth.getGasPrice()
             gasAmt = web3.utils.fromWei(gasAmt, "ether")
