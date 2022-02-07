@@ -6,6 +6,8 @@ import ReactNbsp from 'react-nbsp'
 const LandingPage = () => {
 
     const [about, setAbout] = useState('')
+    const [aboutSub, setAboutSub] = useState('')
+
     const [aboutStatus, setAboutStatus] = useState('ABOUT ME')
 
     const goToCryptoDashboard = () => {
@@ -44,11 +46,13 @@ const LandingPage = () => {
         try
         {
             if(aboutStatus!="CLOSE"){
-            setAbout("Hi! I am a Software Developer from Canada actively seeking a position in blockchain development. My hours are flexible to work in any time zone, remote global. Explore my work to see if my talents are a good fit for your company.")
+            setAbout("Hi! I am a Software Developer from Canada actively seeking a position in blockchain development. My hours are flexible to work in any time zone, remote global.")
+            setAboutSub("Explore my work to see if my talents are a good fit for your company.")
             setAboutStatus("CLOSE")
             }
             else {
                 setAbout("")
+                setAboutSub("")
                 setAboutStatus("ABOUT ME")
             }
         }
@@ -70,6 +74,7 @@ return(
         <div className={styles.theSpacer}>
         <button onClick={displayAbout}className={styles.theButtonAbout} >{aboutStatus}</button>
         <p className={styles.aboutText}>{about}</p>
+        <p className={styles.aboutText}>{aboutOne}</p>
     </div>
     </div>
 </body>
