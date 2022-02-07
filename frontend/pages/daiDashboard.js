@@ -152,19 +152,19 @@ const DaiDashboard = () => {
                                         Overview
                                     </a>
 
-                                    <a class="navbar-item" href="ethDashboard">
+                                    <a className="navbar-item" href="ethDashboard">
                                         Eth
                                     </a>
-                                    <a class="navbar-item" href="linkDashboard">
+                                    <a className="navbar-item" href="linkDashboard">
                                         Link
                                     </a>
-                                    <a class="navbar-item" href="daiDashboard">
+                                    <a className="navbar-item" href="daiDashboard">
                                         Dai
                                     </a>
-                                    <a class="navbar-item" href="usdtDashboard">
+                                    <a className="navbar-item" href="usdtDashboard">
                                         Usdt
                                     </a>
-                                    <a class="navbar-item" href="shibaDashboard">
+                                    <a className="navbar-item" href="shibaDashboard">
                                         Shiba
                                     </a>
                                     <div className="navbar-item has-dropdown is-hoverable">
