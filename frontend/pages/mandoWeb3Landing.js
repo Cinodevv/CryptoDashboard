@@ -1,7 +1,6 @@
 import 'bulma/css/bulma.css'
 import { useState } from 'react'
 import styles from '../styles/landingPage.module.css'
-import ReactNbsp from 'react-nbsp'
 
 const LandingPage = () => {
 
@@ -63,9 +62,9 @@ return(
     <div>
         <div className={styles.titleOne}>MANDO'S WEB3 DASHBOARD</div>
         <div className={styles.titleTwo}>Click to Explore My Projects</div>
-        <p><button onClick={goToCryptoDashboard} className={styles.theButtons} >CryptoDashboard</button><ReactNbsp/><ReactNbsp/>
-           <button onClick={goToNft} className={styles.theButtons} >NFT Marketplace</button><ReactNbsp/><ReactNbsp/>
-           <button onClick={goToToken} className={styles.theButtons} >Crypto Token</button><ReactNbsp/><ReactNbsp/>
+        <p><button onClick={goToCryptoDashboard} className={styles.theButtons} >CryptoDashboard</button>
+           <button onClick={goToNft} className={styles.theButtons} >NFT Marketplace</button>
+           <button onClick={goToToken} className={styles.theButtons} >Crypto Token</button>
         </p>
         <div className={styles.theSpacer}>
         <button onClick={displayAbout}className={styles.theButtonAbout} >{aboutStatus}</button>
