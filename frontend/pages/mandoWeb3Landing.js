@@ -80,16 +80,20 @@ return(
     <div>
         <div className={styles.titleOne}>MANDO&apos;S WEB3 DASHBOARD</div>
         <div className={styles.titleTwo}>Click to Explore My Projects</div>
+        <div className={styles.buttonHolderDiv}>
         <p><button onClick={goToCryptoDashboard} className={styles.theButtons} >CryptoDashboard</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToNftDashboard} className={styles.theButtons} >NftDashboard</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToNftOpensea} className={styles.theButtons} >NFTCollection</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToToken} className={styles.theButtons} >CryptoToken</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToToken} className={styles.theButtons} >Web3HUB</button><ReactNbsp/><ReactNbsp/>
         </p>
+        </div>
         <div className={styles.theSpacer}>
         <button onClick={displayAbout}className={styles.theButtonAbout} >{aboutStatus}</button>
+        <div className={styles.aboutTextDiv}>
         <p className={styles.aboutText}>{about}</p>
         <p className={styles.aboutText}>{aboutSub}</p>
+        </div>
     </div>
     </div>
 </body>
