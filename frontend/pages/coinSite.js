@@ -50,7 +50,7 @@ const DuckSite = () => {
      const goToOpensea = () => {
         try
         {
-            window.location.href="https://opensea.io";
+            window.location.href="https://testnets.opensea.io/collection/cryptoducks-m2yxnlizh9";
         }
         catch (err) {
          setError(err.message)
