@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import mendohContract from '../blockchain/mendohContract'
 
-const mendohCoinDashboard = () => {
+const MendohCoinDashboard = () => {
 
     const [error, setError] = useState('')
     const [successMsg, setSuccessMsg] = useState('')
@@ -210,4 +210,4 @@ return(
 )
 }
 
-export default landingPage
+export default MandingPage
