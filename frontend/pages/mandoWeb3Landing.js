@@ -48,7 +48,7 @@ const LandingPage = () => {
     const goToToken = () => {
         try
         {
-            window.location.href="https://bscscan.com/token/0x32b28ea2210a410d2aadb743238e43ca7c3f64e5";
+            window.location.href="/coinSite";
         }
         catch (err) {
          setError(err.message)
