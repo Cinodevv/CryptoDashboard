@@ -20,7 +20,17 @@ const DuckSite = () => {
     const goToContract = () => {
         try
         {
-            window.location.href="https://bscscan.com/";
+            window.location.href="https://bscscan.com/address/0x3b7d1865c72bb955d523bd39ba85cb290827c451";
+        }
+        catch (err) {
+         setError(err.message)
+         console.log(err.message)
+     }
+    }
+    const goToTokeninfo = () => {
+        try
+        {
+            window.location.href="https://bscscan.com/token/0x3b7d1865c72bb955d523bd39ba85cb290827c451";
         }
         catch (err) {
          setError(err.message)
@@ -65,6 +75,7 @@ return(
         <button onClick={goToPoocoin} className={styles.theButton}>Buy <Image className={styles.pancakeLogo} src="/poocoin.png" height="30" width="30"/></button><ReactNbsp/><ReactNbsp/>
         <button onClick={goToCake} className={styles.theButton}>Buy <Image className={styles.pancakeLogo} src="/pancakeSwap.jpg" height="30" width="30"/></button><ReactNbsp/><ReactNbsp/>
         <button onClick={goToContract} className={styles.theButton}>Contract <Image className={styles.pancakeLogo} src="/contract.png" height="30" width="30"/></button><ReactNbsp/><ReactNbsp/>
+        <button onClick={goToTokeninfo} className={styles.theButton}>Token <Image className={styles.pancakeLogo} src="/logo.png" height="30" width="30"/></button><ReactNbsp/><ReactNbsp/>
         <button onClick={goToOpensea} className={styles.theButton}>Opensea <Image className={styles.pancakeLogo} src="/osea.png" height="30" width="30"/></button>
         <hr></hr>
         <div className={styles.bottomPage}>
