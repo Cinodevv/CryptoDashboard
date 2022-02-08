@@ -26,7 +26,7 @@ const LandingPage = () => {
     const goToNftOpensea = () => {
         try
         {
-            window.location.href="https://opensea.io/";
+            window.location.href="https://testnets.opensea.io/collection/cryptoducks-m2yxnlizh9";
         }
         catch (err) {
          setError(err.message)
@@ -82,7 +82,7 @@ return(
         <div className={styles.titleTwo}>Click to Explore My Projects</div>
         <div className={styles.buttonHolderDiv}>
         <p><button onClick={goToCryptoDashboard} className={styles.theButtons} >CryptoDashboard</button><ReactNbsp/><ReactNbsp/>
-           <button onClick={goToNftDashboard} className={styles.theButtons} >NftDashboard</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToNftDashboard} className={styles.theButtons} >NFTDashboard</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToNftOpensea} className={styles.theButtons} >NFTCollection</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToToken} className={styles.theButtons} >CryptoToken</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToToken} className={styles.theButtons} >Web3HUB</button><ReactNbsp/><ReactNbsp/>

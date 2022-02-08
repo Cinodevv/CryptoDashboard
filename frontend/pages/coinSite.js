@@ -57,6 +57,16 @@ const DuckSite = () => {
          console.log(err.message)
      }
     }
+    const goToLanding = () => {
+        try
+        {
+            window.location.href="/mandoWeb3Landing";
+        }
+        catch (err) {
+         setError(err.message)
+         console.log(err.message)
+     }
+    }
    
         
 return(
@@ -77,10 +87,12 @@ return(
         <button onClick={goToContract} className={styles.theButton}>Contract <Image className={styles.pancakeLogo} src="/contract.png" height="30" width="30"/></button><ReactNbsp/><ReactNbsp/>
         <button onClick={goToTokeninfo} className={styles.theButton}>Token <Image className={styles.pancakeLogo} src="/logo.png" height="30" width="30"/></button><ReactNbsp/><ReactNbsp/>
         <button onClick={goToOpensea} className={styles.theButton}>Opensea <Image className={styles.pancakeLogo} src="/osea.png" height="30" width="30"/></button>
-        <hr></hr>
         <div className={styles.bottomPage}>
+            
             <img className={styles.pancakeLogo} src="/telegram.png"></img><ReactNbsp/><ReactNbsp/>
             <img className={styles.pancakeLogo} src="/discord.png"></img>
+            <hr></hr>
+            <button onClick={goToLanding} className={styles.theButton}>Landing</button>
             <p className={styles.theFooter}>Mando Copyright 2022. All Rights Reserved.</p>
         </div>
     </div>
