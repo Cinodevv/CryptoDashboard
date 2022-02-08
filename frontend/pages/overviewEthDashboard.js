@@ -344,7 +344,7 @@ return(
                     <div className="tile is-ancestor has-text-centered">
                         <div className="tile is-parent  mt-2">
                             <article className="tile is-child box">
-                                <img src="/link.png" width="50" height="50" alt="eth logo"></img>
+                                <Image src="/link.png" width="50" height="50" alt="eth logo"/>
                             </article>
                         </div>
                         <div className="tile is-parent  mt-2">
@@ -363,7 +363,7 @@ return(
                     <div className="tile is-ancestor has-text-centered">
                         <div className="tile is-parent  mt-2">
                             <article className="tile is-child box">
-                                <img src="/dai.png" width="50" height="50" alt="eth logo"></img>
+                                <Image src="/dai.png" width="50" height="50" alt="eth logo"/>
                             </article>
                         </div>
                         <div className="tile is-parent  mt-2">
@@ -382,7 +382,7 @@ return(
                     <div className="tile is-ancestor has-text-centered">
                         <div className="tile is-parent  mt-2">
                             <article className="tile is-child box">
-                                <img src="/usdt.png" width="50" height="50" alt="eth logo"></img>
+                                <Image src="/usdt.png" width="50" height="50" alt="eth logo"/>
                             </article>
                         </div>
                         <div className="tile is-parent  mt-2">
@@ -401,7 +401,7 @@ return(
                     <div className="tile is-ancestor has-text-centered">
                         <div className="tile is-parent  mt-2">
                             <article className="tile is-child box">
-                                <img src="/shiba.png" width="50" height="50" alt="eth logo"></img>
+                                <Image src="/shiba.png" width="50" height="50" alt="eth logo"/>
                             </article>
                         </div>
                         <div className="tile is-parent  mt-2">
