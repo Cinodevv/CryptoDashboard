@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@openzeppelin/contracts": "^4.4.2",
     "react-nbsp": "^1.2.4"
   }
 }

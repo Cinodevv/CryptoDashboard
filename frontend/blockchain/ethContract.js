@@ -234,3 +234,4 @@ export function getERC20Contract(contractAddress, web3) {
         abi,
         contractAddress)
     }
+    

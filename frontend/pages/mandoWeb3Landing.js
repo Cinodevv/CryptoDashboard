@@ -21,7 +21,7 @@ const LandingPage = () => {
      }
     }
 
-    const goToNft = () => {
+    const goToNftOpensea = () => {
         try
         {
             window.location.href="https://opensea.io/";
@@ -31,11 +31,22 @@ const LandingPage = () => {
          console.log(err.message)
      }
     }
+    const goToNftDashboard = () => {
+        try
+        {
+            window.location.href="/nftDashboard";
+        }
+        catch (err) {
+         setError(err.message)
+         console.log(err.message)
+     }
+    }
+
 
     const goToToken = () => {
         try
         {
-            window.location.href="https://rinkeby.etherscan.io/token/0xa6c3e9673b4698d7ad0596585e4529e6713a8836";
+            window.location.href="https://bscscan.com/token/0x32b28ea2210a410d2aadb743238e43ca7c3f64e5";
         }
         catch (err) {
          setError(err.message)
@@ -68,13 +79,15 @@ return(
         <div className={styles.titleOne}>MANDO&apos;S WEB3 DASHBOARD</div>
         <div className={styles.titleTwo}>Click to Explore My Projects</div>
         <p><button onClick={goToCryptoDashboard} className={styles.theButtons} >CryptoDashboard</button><ReactNbsp/><ReactNbsp/>
-           <button onClick={goToNft} className={styles.theButtons} >NFT Marketplace</button><ReactNbsp/><ReactNbsp/>
-           <button onClick={goToToken} className={styles.theButtons} >Crypto Token</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToNftDashboard} className={styles.theButtons} >NftDashboard</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToNftOpensea} className={styles.theButtons} >NFTCollection</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToToken} className={styles.theButtons} >CryptoToken</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToToken} className={styles.theButtons} >Web3HUB</button><ReactNbsp/><ReactNbsp/>
         </p>
         <div className={styles.theSpacer}>
         <button onClick={displayAbout}className={styles.theButtonAbout} >{aboutStatus}</button>
         <p className={styles.aboutText}>{about}</p>
-        <p className={styles.aboutText}>{aboutOne}</p>
+        <p className={styles.aboutText}>{aboutSub}</p>
     </div>
     </div>
 </body>
