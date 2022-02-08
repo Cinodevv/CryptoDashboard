@@ -142,8 +142,6 @@ const NftDashboard = () => {
 
     return (
         <body>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0-rc.0/web3.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <div className={styles.top}>
                 <h1>Mando Crypto Dashboard</h1>
                 <button className={styles.connecter} onClick={connectWalletHandler} >{connectStatus}</button>
