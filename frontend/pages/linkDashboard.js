@@ -3,6 +3,8 @@ import styles from '../styles/echange.module.css'
 import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import { getERC20Contract } from '../blockchain/ethContract'
+import Image from 'next/image'
+
 
 const LinkDashboard = () => {
     const [error, setError] = useState('')
@@ -204,7 +206,7 @@ const LinkDashboard = () => {
                             <div className="tile is-ancestor has-text-centered">
                                 <div className="tile is-parent  mt-4">
                                     <article className="tile is-child box">
-                                        <img src="/link.png" width="75" height="75" alt="link logo"></img>
+                                        <Image src="/link.png" width="75" height="75" alt="link logo"/>
                                     </article>
                                 </div>
                                 <div className="tile is-parent  mt-4">

@@ -2,6 +2,7 @@ import 'bulma/css/bulma.css'
 import styles from '../styles/echange.module.css'
 import { useState, useEffect } from 'react'
 import Web3 from 'web3'
+import Image from 'next/image'
 
 const EthDashboard = () => {
     const [error, setError] = useState('')
@@ -230,7 +231,7 @@ const EthDashboard = () => {
                             <div className="tile is-ancestor has-text-centered">
                                 <div className="tile is-parent  mt-4">
                                     <article className="tile is-child box">
-                                        <img src="/eth.png" width="50" height="50" alt="eth logo"></img>
+                                        <Image src="/eth.png" width="50" height="50" alt="eth logo"/>
                                     </article>
                                 </div>
                                 <div className="tile is-parent  mt-4">

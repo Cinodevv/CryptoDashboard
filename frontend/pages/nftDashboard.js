@@ -3,6 +3,8 @@ import styles from '../styles/echange.module.css'
 import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import { getNftContract } from '../blockchain/nftContract'
+import Image from 'next/image'
+
 
 const NftDashboard = () => {
     const [error, setError] = useState('')

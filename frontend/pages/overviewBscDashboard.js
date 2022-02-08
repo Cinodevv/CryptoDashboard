@@ -3,6 +3,8 @@ import styles from '../styles/echange.module.css'
 import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import { getBEP20Contract } from '../blockchain/bscContract'
+import Image from 'next/image'
+
 
 const OverviewBscDashboard = () => {
 
@@ -197,7 +199,7 @@ return(
                     <div className="tile is-ancestor has-text-centered">
                         <div className="tile is-parent  mt-2">
                             <article className="tile is-child box">
-                                <img src="/bnb.png" width="50" height="50" alt="bnb logo"></img>
+                                <Image src="/bnb.png" width="50" height="50" alt="bnb logo"/>
                             </article>
                         </div>
                         <div className="tile is-parent  mt-2">

@@ -2,6 +2,8 @@ import 'bulma/css/bulma.css'
 import { useState } from 'react'
 import styles from '../styles/landingPage.module.css'
 import ReactNbsp from 'react-nbsp'
+import Image from 'next/image'
+
 
 const LandingPage = () => {
 
