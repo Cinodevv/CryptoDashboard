@@ -55,6 +55,17 @@ const LandingPage = () => {
          console.log(err.message)
      }
     }
+
+    const goToApi = () => {
+        try
+        {
+            window.location.href="https://crypto-dash-api.vercel.app/";
+        }
+        catch (err) {
+         setError(err.message)
+         console.log(err.message)
+     }
+    }
     const displayAbout = () => {
         try
         {
@@ -85,7 +96,7 @@ return(
            <button onClick={goToNftDashboard} className={styles.theButtons} >NFTDashboard</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToNftOpensea} className={styles.theButtons} >NFTCollection</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToToken} className={styles.theButtons} >CryptoToken</button><ReactNbsp/><ReactNbsp/>
-           <button onClick={goToToken} className={styles.theButtons} >Web3HUB</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToApi} className={styles.theButtons} >CryptoAPI</button><ReactNbsp/><ReactNbsp/>
         </p>
         </div>
         <div className={styles.theSpacer}>
