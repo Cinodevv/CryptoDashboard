@@ -73,9 +73,6 @@ return(
 <body className={styles.bodyPage}>
     <div>
         <h1 className={styles.titlePage}>THE MIGHTY DUCKS</h1>
-        <nav className={styles.theNav}>
-            <a href="https://testnets.opensea.io/collection/cryptoducks-m2yxnlizh9"> NFT MarketPlace</a>
-        </nav>
         <img src="/theDucks.jpg" height="400" width="800"></img>
         <div>Buy Now to Join the Mighty Ducks Club</div>
         <div>Total Supply of 100m</div>
