@@ -225,7 +225,6 @@ return(
                     <li className={styles.leftText}><a href="nftDashboard" className={styles.texts}>NFT Dashboard</a></li>
                                 <li className={styles.leftText}><a href="overviewEthDashboard" className={styles.texts}>Crypto ERC Dashboard</a></li>
                                 <li className={styles.leftText}><a href="overviewBscDashboard" className={styles.texts}>Crypto BSC Dashboard</a></li>
-                                <li className={styles.leftText}><a href="nftDashboard" className={styles.texts}>NFT Dashboard</a></li>
                                 <li className={styles.leftText}><a href="coinSite" className={styles.texts}>Crypto Token</a></li>
                                 <li className={styles.leftText}><a href="https://crypto-dash-api.vercel.app/" className={styles.texts}>Cryptoverse</a></li>
                                 <li className={styles.leftText}><a href="mandoWeb3Landing" className={styles.texts}>Landing Page</a></li>
