@@ -1,5 +1,5 @@
 import 'bulma/css/bulma.css'
-import styles from '../styles/echange.module.css'
+import styles from '../styles/app.module.css'
 import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import { getNftContract } from '../blockchain/nftContract'
@@ -157,7 +157,8 @@ const NftDashboard = () => {
                                 <li className={styles.leftText}><a href="overviewEthDashboard" className={styles.texts}>Crypto ERC Dashboard</a></li>
                                 <li className={styles.leftText}><a href="overviewBscDashboard" className={styles.texts}>Crypto BSC Dashboard</a></li>
                                 <li className={styles.leftText}><a href="coinSite" className={styles.texts}>Crypto Token</a></li>
-                                <li className={styles.leftText}><a href="mandoWeb3Landing" className={styles.texts}>Landing Page</a></li>
+                                <li className={styles.leftText}><a href="coinSite" className={styles.texts}>Cryptoverse</a></li>
+                                <li className={styles.leftText}><a href="https://crypto-dash-api.vercel.app/" className={styles.texts}>Landing Page</a></li>
                             </ul>
                         </aside>
                     </div>

@@ -1,5 +1,5 @@
 import 'bulma/css/bulma.css'
-import styles from '../styles/echange.module.css'
+import styles from '../styles/app.module.css'
 import { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import { getBEP20Contract } from '../blockchain/bscContract'

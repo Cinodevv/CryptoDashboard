@@ -1,5 +1,5 @@
 import 'bulma/css/bulma.css'
-import styles from '../styles/mendohCoinSite.module.css'
+import styles from '../styles/coinSite.module.css'
 import Image from 'next/image'
 import Web3 from 'web3'
 import ReactNbsp from 'react-nbsp'
@@ -92,7 +92,7 @@ return(
             <img className={styles.pancakeLogo} src="/telegram.png"></img><ReactNbsp/><ReactNbsp/>
             <img className={styles.pancakeLogo} src="/discord.png"></img>
             <hr></hr>
-            <button onClick={goToLanding} className={styles.theButton}>Landing</button>
+            <button onClick={goToLanding} className={styles.theButton}>Return</button>
             <p className={styles.theFooter}>Mando Copyright 2022. All Rights Reserved.</p>
         </div>
     </div>
