@@ -87,6 +87,7 @@ const LandingPage = () => {
     }
 
 return(
+<html className={styles.thehtml}>
 <body className={styles.bodyPage}>
     <div>
         <div className={styles.titleOne}>MANDO&apos;S WEB3 DASHBOARD</div>
@@ -108,6 +109,7 @@ return(
     </div>
     </div>
 </body>
+</html>
 )
 }
 

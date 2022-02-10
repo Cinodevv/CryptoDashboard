@@ -1,8 +1,11 @@
-.bodyPage {
-    background-image: url("../public/stars.jpg");
+.thehtml {
+    background: url("../public/cosmos.jpg") no-repeat center fixed;     
+    background-size: cover;
     background-repeat: no-repeat;
+    min-height: 1300px;
+}
+.bodyPage {
     font-size:50px;
-    min-height: 1147px;
     color: white;
     text-align:center;
 }
@@ -20,7 +23,7 @@
     padding-bottom: 50px;
 }
 .theButtons {
-    font-size:2vw;
+    font-size:40px;
     background-color:rgba(0,0,0,0.5) ;
     color:white;
     text-align:center;
@@ -38,7 +41,7 @@
 }
 
 .theButtonAbout {
-    font-size:1.3vw;
+    font-size:40px;
     background-color:rgba(0,0,0,0.5) ;
     color:white;
     text-align:center;
@@ -50,7 +53,7 @@
     background-color:rgba(255, 255, 255, 0.5) ;
 }
 .aboutText{
-    font-size:1vw;
+    font-size:35px;
     padding-left: 50px;
     padding-right: 50px;
 }
