@@ -86,10 +86,21 @@ const LandingPage = () => {
      }
     }
 
-    const goToTokenContract = () => {
+    const goToTokenBepContract = () => {
         try
         {
             window.location.href="https://bscscan.com/address/0x3b7d1865c72bb955d523bd39ba85cb290827c451";
+        }
+        catch (err) {
+         setError(err.message)
+         console.log(err.message)
+     }
+    }
+    
+    const goToTokenErcContract = () => {
+        try
+        {
+            window.location.href="https://rinkeby.etherscan.io/address/0x93a2f07f41a9a61c7602f3618db9d59f1eb01702";
         }
         catch (err) {
          setError(err.message)
@@ -140,7 +151,8 @@ return(
            <button onClick={goToToken} className={styles.theButtons} >CryptoToken</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToCryptoDashboardBsc} className={styles.theButtons} >CryptoBEPDashboard</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToApi} className={styles.theButtons} >CryptoAPI</button><ReactNbsp/><ReactNbsp/>
-           <button onClick={goToTokenContract} className={styles.theButtons} >CryptoContract</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToTokenBepContract} className={styles.theButtons} >CryptoBEPContract</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToTokenErcContract} className={styles.theButtons} >CryptoERCContract</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToPrivateNftMarketplace} className={styles.theButtons} >NFTMarketplace</button><ReactNbsp/><ReactNbsp/>
         </p>
         </div>
