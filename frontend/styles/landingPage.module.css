@@ -23,7 +23,7 @@
     padding-bottom: 50px;
 }
 .theButtons {
-    font-size:40px;
+    font-size:2.2vw;
     background-color:rgba(0,0,0,0.5) ;
     color:white;
     text-align:center;
@@ -41,7 +41,7 @@
 }
 
 .theButtonAbout {
-    font-size:40px;
+    font-size:2vw;
     background-color:rgba(0,0,0,0.5) ;
     color:white;
     text-align:center;
