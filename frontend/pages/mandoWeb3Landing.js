@@ -12,10 +12,21 @@ const LandingPage = () => {
 
     const [aboutStatus, setAboutStatus] = useState('ABOUT ME')
 
-    const goToCryptoDashboard = () => {
+    const goToCryptoDashboardEth = () => {
         try
         {
             window.location.href="/overviewEthDashboard";
+        }
+        catch (err) {
+         setError(err.message)
+         console.log(err.message)
+     }
+    }
+
+    const goToCryptoDashboardBsc = () => {
+        try
+        {
+            window.location.href="/overviewBscDashboard";
         }
         catch (err) {
          setError(err.message)
@@ -43,8 +54,16 @@ const LandingPage = () => {
          console.log(err.message)
      }
     }
-
-
+    const goToNftContract = () => {
+        try
+        {
+            window.location.href="https://rinkeby.etherscan.io/token/0x715A8b087f3491f37C481eD5b0D08288F1832EC5";
+        }
+        catch (err) {
+         setError(err.message)
+         console.log(err.message)
+     }
+    }
     const goToToken = () => {
         try
         {
@@ -60,6 +79,27 @@ const LandingPage = () => {
         try
         {
             window.location.href="https://crypto-dash-api.vercel.app/";
+        }
+        catch (err) {
+         setError(err.message)
+         console.log(err.message)
+     }
+    }
+
+    const goToTokenContract = () => {
+        try
+        {
+            window.location.href="https://bscscan.com/address/0x3b7d1865c72bb955d523bd39ba85cb290827c451";
+        }
+        catch (err) {
+         setError(err.message)
+         console.log(err.message)
+     }
+    }
+    const goToPrivateNftMarketplace = () => {
+        try
+        {
+            window.location.href="/mandoWeb3Landing";
         }
         catch (err) {
          setError(err.message)
@@ -93,11 +133,15 @@ return(
         <div className={styles.titleOne}>MANDO&apos;S WEB3 DASHBOARD</div>
         <div className={styles.titleTwo}>Click to Explore My Projects</div>
         <div className={styles.buttonHolderDiv}>
-        <p><button onClick={goToCryptoDashboard} className={styles.theButtons} >CryptoDashboard</button><ReactNbsp/><ReactNbsp/>
+        <p><button onClick={goToCryptoDashboardEth} className={styles.theButtons} >CryptoERCDashboard</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToNftDashboard} className={styles.theButtons} >NFTDashboard</button><ReactNbsp/><ReactNbsp/>
-           <button onClick={goToNftOpensea} className={styles.theButtons} >NFTCollection</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToNftOpensea} className={styles.theButtons} >NFTScriptMint</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToNftContract} className={styles.theButtons} >NFTContract</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToToken} className={styles.theButtons} >CryptoToken</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToCryptoDashboardBsc} className={styles.theButtons} >CryptoBEPDashboard</button><ReactNbsp/><ReactNbsp/>
            <button onClick={goToApi} className={styles.theButtons} >CryptoAPI</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToTokenContract} className={styles.theButtons} >CryptoContract</button><ReactNbsp/><ReactNbsp/>
+           <button onClick={goToPrivateNftMarketplace} className={styles.theButtons} >NFTMarketplace</button><ReactNbsp/><ReactNbsp/>
         </p>
         </div>
         <div className={styles.theSpacer}>
