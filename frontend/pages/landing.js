@@ -18,6 +18,7 @@ import {
   faWallet,
   faScroll,
   faCircleInfo,
+  faBitcoinSign,
 } from "@fortawesome/free-solid-svg-icons";
 
 const LandingPage = () => {
@@ -93,7 +94,7 @@ const LandingPage = () => {
               <ReactNbsp />
               <Link href="/coinSite">
                 <button className={styles.theButtons}>
-                  <FontAwesomeIcon icon={faShop} />
+                  <FontAwesomeIcon icon={faBitcoinSign} />
                   &nbsp; CryptoToken
                 </button>
               </Link>
@@ -102,7 +103,7 @@ const LandingPage = () => {
               <ReactNbsp />
               <Link href="/overviewBscDashboard">
                 <button className={styles.theButtons}>
-                  <FontAwesomeIcon icon={faShop} />
+                  <FontAwesomeIcon icon={faWallet} />
                   &nbsp; CryptoBEPDashboard
                 </button>
               </Link>
@@ -144,7 +145,7 @@ const LandingPage = () => {
               </Link>
             </p>
             <div className="infoButtons">
-              <p className={styles.titleThree}>My Information</p>
+              <p className={styles.titleThree}>More Details</p>
               <Link href="/Armandoresume.pdf">
                 <button className={styles.theButtons}>
                   <FontAwesomeIcon icon={faFile} />
