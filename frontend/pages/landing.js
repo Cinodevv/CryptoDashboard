@@ -191,6 +191,9 @@ const LandingPage = () => {
           </div>
         </div>
       </body>
+      <div className={styles.footer}>
+        <p>Website designed and programmed by Armando Mancino.</p>
+      </div>
     </html>
   );
 };
