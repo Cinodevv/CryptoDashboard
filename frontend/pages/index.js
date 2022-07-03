@@ -1,21 +1,11 @@
-import Head from 'next/head'
-import React from 'react'
-import { useEffect} from 'react'
-import {useRouter} from 'next/router' 
-import styles from '../styles/Home.module.css'
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 const Home = () => {
-  const router = useRouter()
+  const router = useRouter();
   useEffect(() => {
-    router.push('/mandoWeb3Landing');
-  },[])
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Crypto Dashboard</title>
-        <meta name="description" content="Created by Mando" />
-      </Head>
-    </div>
-  )
-  }
-export default Home
+    router.push("/landing");
+  }, []);
+  return <></>;
+};
+export default Home;
