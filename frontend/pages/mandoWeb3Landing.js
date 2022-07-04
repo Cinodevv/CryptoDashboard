@@ -37,7 +37,7 @@ const MandoWeb3Landing = () => {
     try {
       if (aboutStatus != "CLOSE") {
         setAbout(
-          "Hi! I am a Software Developer from Montreal, Canada actively seeking a remote position in software development. My hours are flexible to work in any time zone, remote global."
+          "Hi! I am a Software Developer from Montreal, Canada actively seeking a remote position in software development. I have been programming for over 11 years and know a variety of languages. My hours are flexible to work in any time zone, remote global."
         );
         setAboutSub(
           "Explore my work to see if my talents are a good fit for your company."
@@ -178,8 +178,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faWallet} />
-                  &nbsp; Crypto ERC Dashboard
+                  <ReactNbsp />
+                  Crypto ERC Dashboard
                 </button>
               </Link>
               <ReactNbsp />
@@ -190,8 +192,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faWallet} />
-                  &nbsp; NFT Dashboard
+                  <ReactNbsp />
+                  NFT Dashboard
                 </button>
               </Link>
               <ReactNbsp />
@@ -202,8 +206,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faScroll} />
-                  &nbsp; NFT Script Mint
+                  <ReactNbsp />
+                  NFT Script Mint
                 </button>
               </Link>
 
@@ -215,8 +221,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faFileContract} />
-                  &nbsp; NFT Contract
+                  <ReactNbsp />
+                  NFT Contract
                 </button>
               </Link>
 
@@ -228,8 +236,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faBitcoinSign} />
-                  &nbsp; Crypto Token
+                  <ReactNbsp />
+                  Crypto Token
                 </button>
               </Link>
 
@@ -241,8 +251,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faWallet} />
-                  &nbsp; Crypto BEP Dashboard
+                  <ReactNbsp />
+                  Crypto BEP Dashboard
                 </button>
               </Link>
 
@@ -254,8 +266,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faCircleInfo} />
-                  &nbsp; Crypto API
+                  <ReactNbsp />
+                  Crypto API
                 </button>
               </Link>
 
@@ -267,8 +281,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faFileContract} />
-                  &nbsp; Crypto BEP Contract
+                  <ReactNbsp />
+                  Crypto BEP Contract
                 </button>
               </Link>
 
@@ -280,8 +296,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faFileContract} />
-                  &nbsp; Crypto ERC Contract
+                  <ReactNbsp />
+                  Crypto ERC Contract
                 </button>
               </Link>
 
@@ -293,8 +311,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faShop} />
-                  &nbsp; NFT Marketplace
+                  <ReactNbsp />
+                  NFT Marketplace
                 </button>
               </Link>
               <ReactNbsp />
@@ -305,8 +325,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faPaw} />
-                  &nbsp; My Dog Care Website
+                  <ReactNbsp />
+                  My Dog Care Website
                 </button>
               </Link>
               <ReactNbsp />
@@ -317,8 +339,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faMessage} />
-                  &nbsp; Forumly
+                  <ReactNbsp />
+                  Forumly
                 </button>
               </Link>
               <ReactNbsp />
@@ -329,8 +353,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faHandHoldingHeart} />
-                  &nbsp; Client&apos;s Non-Profit Website
+                  <ReactNbsp />
+                  Client&apos;s Non-Profit Website
                 </button>
               </Link>
               <ReactNbsp />
@@ -341,8 +367,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
-                  &nbsp;Poker C#
+                  <ReactNbsp />
+                  Poker C#
                 </button>
               </Link>
               <ReactNbsp />
@@ -353,8 +381,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
-                  &nbsp;Space Attack Game JS
+                  <ReactNbsp />
+                  Space Attack Game JS
                 </button>
               </Link>
               <ReactNbsp />
@@ -365,8 +395,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
-                  &nbsp;Shopping Cart Website Javascript
+                  <ReactNbsp />
+                  Shopping Cart Website Javascript
                 </button>
               </Link>
               <ReactNbsp />
@@ -377,8 +409,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
-                  &nbsp;Weather API
+                  <ReactNbsp />
+                  Weather API JS
                 </button>
               </Link>
               <ReactNbsp />
@@ -389,8 +423,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
-                  &nbsp;BattleShip Game
+                  <ReactNbsp />
+                  BattleShip Game C# UI
                 </button>
               </Link>
               <ReactNbsp />
@@ -401,8 +437,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
-                  &nbsp;Theorem
+                  <ReactNbsp />
+                  Theorem Java
                 </button>
               </Link>
               <ReactNbsp />
@@ -413,8 +451,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
-                  &nbsp;File I/O
+                  <ReactNbsp />
+                  File I/O Java
                 </button>
               </Link>
               <ReactNbsp />
@@ -425,8 +465,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faFish} />
-                  &nbsp; Small Fish Fund
+                  <ReactNbsp />
+                  Small Fish Fund
                 </button>
               </Link>
             </p>
@@ -438,8 +480,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faFile} />
-                  &nbsp; Armando CV
+                  <ReactNbsp />
+                  Armando CV
                 </button>
               </Link>
 
@@ -451,8 +495,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
-                  &nbsp;My Github
+                  <ReactNbsp />
+                  My Github
                 </button>
               </Link>
 
@@ -464,8 +510,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faUserGraduate} />
-                  &nbsp;My LinkedIn
+                  <ReactNbsp />
+                  My LinkedIn
                 </button>
               </Link>
               <ReactNbsp />
@@ -476,8 +524,10 @@ const MandoWeb3Landing = () => {
                   onMouseOut={outClear}
                   className={styles.theButtons}
                 >
+                  <ReactNbsp />
                   <FontAwesomeIcon icon={faEnvelope} />
-                  &nbsp; Email Me
+                  <ReactNbsp />
+                  Email Me
                 </button>
               </Link>
             </div>
