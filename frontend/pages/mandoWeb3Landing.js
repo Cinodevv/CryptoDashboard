@@ -22,6 +22,7 @@ import {
   faPaw,
   faMessage,
   faHandHoldingHeart,
+  faFish,
 } from "@fortawesome/free-solid-svg-icons";
 
 const MandoWeb3Landing = () => {
@@ -151,6 +152,10 @@ const MandoWeb3Landing = () => {
   function over24() {
     document.getElementById("descText").innerHTML =
       "Input and Output from File Readstream. Github Source Code.";
+  }
+  function over25() {
+    document.getElementById("descText").innerHTML =
+      "Link to my Venture Capital Fund with 35 Investors. (Website still under construction.)";
   }
 
   return (
@@ -410,6 +415,18 @@ const MandoWeb3Landing = () => {
                 >
                   <FontAwesomeIcon icon={faCodeBranch} />
                   &nbsp;File I/O
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="http://Smallfishfund.vc">
+                <button
+                  onMouseOver={over25}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faFish} />
+                  &nbsp; Small Fish Fund
                 </button>
               </Link>
             </p>
