@@ -24,7 +24,7 @@ import {
   faHandHoldingHeart,
 } from "@fortawesome/free-solid-svg-icons";
 
-const LandingPage = () => {
+const MandoWeb3Landing = () => {
   const [about, setAbout] = useState("");
   const [aboutSub, setAboutSub] = useState("");
 
@@ -371,4 +371,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default MandoWeb3Landing;
