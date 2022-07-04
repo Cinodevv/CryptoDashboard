@@ -114,7 +114,7 @@ const LandingPage = () => {
   }
   function over15() {
     document.getElementById("descText").innerHTML =
-      "Link to email me directly. Best form of contact.";
+      "Link to email me directly. Best method to contact me.";
   }
   function over16() {
     document.getElementById("descText").innerHTML =
