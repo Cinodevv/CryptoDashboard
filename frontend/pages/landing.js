@@ -468,7 +468,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faFish} />
                   <ReactNbsp />
-                  Small Fish Fund
+                  Small Fish Fund Venture Capital
                 </button>
               </Link>
             </p>
