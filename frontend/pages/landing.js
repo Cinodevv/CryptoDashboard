@@ -297,7 +297,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faHandHoldingHeart} />
-                  &nbsp; Client's Non-Profit Website
+                  &nbsp; Client&apos;s Non-Profit Website
                 </button>
               </Link>
             </p>
