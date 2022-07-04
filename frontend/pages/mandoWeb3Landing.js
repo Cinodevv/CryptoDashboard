@@ -21,7 +21,7 @@ import {
   faBitcoinSign,
 } from "@fortawesome/free-solid-svg-icons";
 
-const mandoWeb3Landing = () => {
+const MandoWeb3Landing = () => {
   const [about, setAbout] = useState("");
   const [aboutSub, setAboutSub] = useState("");
 
@@ -198,4 +198,4 @@ const mandoWeb3Landing = () => {
   );
 };
 
-export default mandoWeb3Landing;
+export default MandoWeb3Landing;
