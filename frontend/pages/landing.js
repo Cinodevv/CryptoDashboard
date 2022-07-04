@@ -122,7 +122,7 @@ const LandingPage = () => {
           <div className={styles.titleOne}>MANDO&apos;S DASHBOARD</div>
           <div className={styles.titleTwo}>Explore My Software Projects</div>
           <div>
-            <p className={styles.titleTwo} id="descText">
+            <p className={styles.titleDesc} id="descText">
               Hover over projects to read descriptions.
             </p>
           </div>
@@ -255,7 +255,7 @@ const LandingPage = () => {
               </Link>
               <ReactNbsp />
               <ReactNbsp />
-              <Link href="https://doggyventures.ca">
+              <Link href="http://doggyventures.ca">
                 <button
                   onMouseOver={over11}
                   onMouseOut={outClear}
@@ -330,7 +330,7 @@ const LandingPage = () => {
         </div>
       </body>
       <div className={styles.footer}>
-        <p>Website designed and programmed by Armando Mancino.</p>
+        <p>Website programmed by Armando Mancino.</p>
       </div>
     </html>
   );

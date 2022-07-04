@@ -1,12 +1,13 @@
-.bodyPage {
+.theBodyPage {
     background-color:#0f0e13;
     background-image: 
       radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
       radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
       radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
     color:white;
-    Background-attachment:Fixed;
-    min-height: 1200px;
+    position: fixed;  
+    width:100%;
+    height:100%;
     font-size:30px;
     text-align: center;
 }
@@ -44,6 +45,15 @@
   width:30px;
   vertical-align: sub;
 }
+.socialsLogo{
+  padding-top: 5px;
+  height:40px;
+  width:30px;
+  vertical-align: sub;
+  border-width: 4px;
+  border-color:orange;
+  border-radius: 15px;
+}
 .titlePage{
 font-size:60px;
 }
@@ -51,7 +61,12 @@ font-size:60px;
   font-size:18px;
   }
 .bottomPage{
-  padding-top:120px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
 .nav:hover{
   color:white;
