@@ -181,7 +181,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faWallet} />
                   <ReactNbsp />
-                  Crypto ERC Dashboard
+                  Crypto ERC Dashboard NextJs
                 </button>
               </Link>
               <ReactNbsp />
@@ -195,7 +195,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faWallet} />
                   <ReactNbsp />
-                  NFT Dashboard
+                  NFT Dashboard NextJs
                 </button>
               </Link>
               <ReactNbsp />
@@ -209,7 +209,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faScroll} />
                   <ReactNbsp />
-                  NFT Script Mint
+                  NFT Script Mint Python
                 </button>
               </Link>
 
@@ -254,7 +254,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faWallet} />
                   <ReactNbsp />
-                  Crypto BEP Dashboard
+                  Crypto BEP Dashboard NextJs
                 </button>
               </Link>
 
@@ -269,7 +269,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faCircleInfo} />
                   <ReactNbsp />
-                  Crypto API
+                  Crypto API React
                 </button>
               </Link>
 
@@ -314,7 +314,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faShop} />
                   <ReactNbsp />
-                  NFT Marketplace
+                  NFT Marketplace NextJs
                 </button>
               </Link>
               <ReactNbsp />
@@ -328,7 +328,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faPaw} />
                   <ReactNbsp />
-                  My Dog Care Website
+                  My Dog Care Website Wordpress
                 </button>
               </Link>
               <ReactNbsp />
@@ -342,7 +342,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faMessage} />
                   <ReactNbsp />
-                  Forumly
+                  Forumly NextJs
                 </button>
               </Link>
               <ReactNbsp />
@@ -356,7 +356,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faHandHoldingHeart} />
                   <ReactNbsp />
-                  Client&apos;s Non-Profit Website
+                  Client&apos;s Non-Profit Website EasyWP
                 </button>
               </Link>
               <ReactNbsp />
