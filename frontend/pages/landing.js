@@ -20,6 +20,8 @@ import {
   faCircleInfo,
   faBitcoinSign,
   faPaw,
+  faMessage,
+  faHandHoldingHeart,
 } from "@fortawesome/free-solid-svg-icons";
 
 const LandingPage = () => {
@@ -52,7 +54,7 @@ const LandingPage = () => {
   };
   function outClear() {
     document.getElementById("descText").innerHTML =
-      "Hover over projects to read descriptions.";
+      "Hover over projects to read their descriptions.";
   }
   function over1() {
     document.getElementById("descText").innerHTML =
@@ -114,6 +116,14 @@ const LandingPage = () => {
     document.getElementById("descText").innerHTML =
       "Link to email me directly. Best form of contact.";
   }
+  function over16() {
+    document.getElementById("descText").innerHTML =
+      "Newest project in my development so not even close to functional. A forum place for people to discuss stocks and crypto.";
+  }
+  function over17() {
+    document.getElementById("descText").innerHTML =
+      "Website I designed for a non-profit organization.";
+  }
 
   return (
     <html className={styles.thehtml}>
@@ -121,6 +131,7 @@ const LandingPage = () => {
         <div>
           <div className={styles.titleOne}>MANDO&apos;S DASHBOARD</div>
           <div className={styles.titleTwo}>Explore My Software Projects</div>
+          <br></br>
           <div>
             <p className={styles.titleDesc} id="descText">
               Hover over projects to read descriptions.
@@ -263,6 +274,30 @@ const LandingPage = () => {
                 >
                   <FontAwesomeIcon icon={faPaw} />
                   &nbsp; My Dog Care Website
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="http://forumly.vercel.app/">
+                <button
+                  onMouseOver={over16}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faMessage} />
+                  &nbsp; Forumly
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="http://nksdkidsfirst.com/">
+                <button
+                  onMouseOver={over17}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faHandHoldingHeart} />
+                  &nbsp; Client's Non-Profit Website
                 </button>
               </Link>
             </p>

@@ -56,12 +56,12 @@
     background-color:rgba(255, 255, 255, 0.5) ;
 }
 .aboutText{
-    font-size:2vw;
+    font-size:1.5vw;
     padding-left: 50px;
     padding-right: 50px;
 }
 .aboutTextDiv{
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .buttonHolderDiv{
     padding-left: 2vw;
@@ -76,5 +76,5 @@
     text-align: center;
   }
   .titleDesc{
-    font-size: 14px;
+    font-size: 1.5vw;
   }
