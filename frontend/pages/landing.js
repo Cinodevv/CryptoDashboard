@@ -164,7 +164,6 @@ const LandingPage = () => {
         <div>
           <div className={styles.titleOne}>MANDO&apos;S DASHBOARD</div>
           <div className={styles.titleTwo}>Explore My Software Projects</div>
-          <br></br>
           <div>
             <p className={styles.titleDesc} id="descText">
               Hover over projects to read descriptions.
