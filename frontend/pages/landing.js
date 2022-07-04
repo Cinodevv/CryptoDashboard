@@ -146,7 +146,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faWallet} />
-                  &nbsp; CryptoERCDashboard
+                  &nbsp; Crypto ERC Dashboard
                 </button>
               </Link>
               <ReactNbsp />
@@ -158,7 +158,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faWallet} />
-                  &nbsp; NFTDashboard
+                  &nbsp; NFT Dashboard
                 </button>
               </Link>
               <ReactNbsp />
@@ -170,7 +170,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faScroll} />
-                  &nbsp; NFTScriptMint
+                  &nbsp; NFT Script Mint
                 </button>
               </Link>
 
@@ -183,7 +183,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faFileContract} />
-                  &nbsp; NFTContract
+                  &nbsp; NFT Contract
                 </button>
               </Link>
 
@@ -196,7 +196,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faBitcoinSign} />
-                  &nbsp; CryptoToken
+                  &nbsp; Crypto Token
                 </button>
               </Link>
 
@@ -209,7 +209,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faWallet} />
-                  &nbsp; CryptoBEPDashboard
+                  &nbsp; Crypto BEP Dashboard
                 </button>
               </Link>
 
@@ -222,7 +222,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faCircleInfo} />
-                  &nbsp; CryptoAPI
+                  &nbsp; Crypto API
                 </button>
               </Link>
 
@@ -235,7 +235,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faFileContract} />
-                  &nbsp; CryptoBEPContract
+                  &nbsp; Crypto BEP Contract
                 </button>
               </Link>
 
@@ -248,7 +248,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faFileContract} />
-                  &nbsp; CryptoERCContract
+                  &nbsp; Crypto ERC Contract
                 </button>
               </Link>
 
@@ -261,7 +261,7 @@ const LandingPage = () => {
                   className={styles.theButtons}
                 >
                   <FontAwesomeIcon icon={faShop} />
-                  &nbsp; NFTMarketplace
+                  &nbsp; NFT Marketplace
                 </button>
               </Link>
               <ReactNbsp />
