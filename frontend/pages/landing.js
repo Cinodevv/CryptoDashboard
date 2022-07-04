@@ -124,6 +124,34 @@ const LandingPage = () => {
     document.getElementById("descText").innerHTML =
       "Website I designed for a non-profit organization.";
   }
+  function over18() {
+    document.getElementById("descText").innerHTML =
+      "Fully functional Poker game with C#. Github Source Code.";
+  }
+  function over19() {
+    document.getElementById("descText").innerHTML =
+      "Space shooter game with Javascript. Github Source Code.";
+  }
+  function over20() {
+    document.getElementById("descText").innerHTML =
+      "Shopping Cart System with Javascript and JQuery. Github Source Code.";
+  }
+  function over21() {
+    document.getElementById("descText").innerHTML =
+      "Weather API website that retrieves weather details with Javascript and JQuery. Github Source Code.";
+  }
+  function over22() {
+    document.getElementById("descText").innerHTML =
+      "Fully Functional Battleship Game with C# and UI.";
+  }
+  function over23() {
+    document.getElementById("descText").innerHTML =
+      "I tried to disprove a math theory to speed up my homework with Java. Github Source Code.";
+  }
+  function over24() {
+    document.getElementById("descText").innerHTML =
+      "Input and Output from File Readstream. Github Source Code.";
+  }
 
   return (
     <html className={styles.thehtml}>
@@ -298,6 +326,90 @@ const LandingPage = () => {
                 >
                   <FontAwesomeIcon icon={faHandHoldingHeart} />
                   &nbsp; Client&apos;s Non-Profit Website
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="https://github.com/mandocino/Poker">
+                <button
+                  onMouseOver={over18}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faCodeBranch} />
+                  &nbsp;Poker C#
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="https://github.com/mandocino/Space-Attack">
+                <button
+                  onMouseOver={over19}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faCodeBranch} />
+                  &nbsp;Space Attack Game JS
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="https://github.com/mandocino/Shopping-Cart">
+                <button
+                  onMouseOver={over20}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faCodeBranch} />
+                  &nbsp;Shopping Cart Website Javascript
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="https://github.com/mandocino/Weather-API">
+                <button
+                  onMouseOver={over21}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faCodeBranch} />
+                  &nbsp;Weather API
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="https://github.com/mandocino/UI-Battleship">
+                <button
+                  onMouseOver={over22}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faCodeBranch} />
+                  &nbsp;BattleShip Game
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="https://github.com/mandocino/Theorem">
+                <button
+                  onMouseOver={over23}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faCodeBranch} />
+                  &nbsp;Theorem
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="https://github.com/mandocino/File-IO-Formatting">
+                <button
+                  onMouseOver={over24}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faCodeBranch} />
+                  &nbsp;File I/O
                 </button>
               </Link>
             </p>
