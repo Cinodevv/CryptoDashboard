@@ -155,7 +155,7 @@ const LandingPage = () => {
   }
   function over25() {
     document.getElementById("descText").innerHTML =
-      "Link to my Venture Capital Fund with 35 Investors. (Website under construction still.)";
+      "Link to my Venture Capital Fund with 35 Investors. (Website still under construction.)";
   }
 
   return (
