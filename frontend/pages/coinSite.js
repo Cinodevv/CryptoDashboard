@@ -1,7 +1,6 @@
 import "bulma/css/bulma.css";
 import styles from "../styles/coinSite.module.css";
 import Image from "next/image";
-import Web3 from "web3";
 import ReactNbsp from "react-nbsp";
 
 const DuckSite = () => {

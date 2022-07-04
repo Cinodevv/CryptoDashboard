@@ -19,6 +19,7 @@ import {
   faScroll,
   faCircleInfo,
   faBitcoinSign,
+  faPaw,
 } from "@fortawesome/free-solid-svg-icons";
 
 const LandingPage = () => {
@@ -49,6 +50,70 @@ const LandingPage = () => {
       console.log(err.message);
     }
   };
+  function outClear() {
+    document.getElementById("descText").innerHTML =
+      "Hover over projects to read descriptions.";
+  }
+  function over1() {
+    document.getElementById("descText").innerHTML =
+      "A crypto dashboard for the ERC network where you can connect your wallet and check your holdings.";
+  }
+  function over2() {
+    document.getElementById("descText").innerHTML =
+      "A dashboard where you can connect your wallet and view your holdings of my very own NFT collection that I minted with my own script.";
+  }
+  function over3() {
+    document.getElementById("descText").innerHTML =
+      "A Python script that minted my very own NFT collection on the blockchain. Links to opensea for result.";
+  }
+  function over4() {
+    document.getElementById("descText").innerHTML =
+      "Link to my NFT ERC-721 token contract.";
+  }
+  function over5() {
+    document.getElementById("descText").innerHTML =
+      "Website of my very own crypto token on the blockchain.";
+  }
+  function over6() {
+    document.getElementById("descText").innerHTML =
+      "A crypto dashboard for the BEP network where you can connect your wallet and check your holdings.";
+  }
+  function over7() {
+    document.getElementById("descText").innerHTML =
+      "An crypto news dashboard that uses API calls to display various news and information on a website regarding cryptocurrency.";
+  }
+  function over8() {
+    document.getElementById("descText").innerHTML =
+      "Link to my BEP20 token contract.";
+  }
+  function over9() {
+    document.getElementById("descText").innerHTML =
+      "Link to my ERC-20 token contract.";
+  }
+  function over10() {
+    document.getElementById("descText").innerHTML =
+      "A marketplace for NFTs. Started but not completed. Link Coming Soon.";
+  }
+  function over11() {
+    document.getElementById("descText").innerHTML =
+      "My website I created for a dog care service I provide in my neighbourhood.";
+  }
+  function over12() {
+    document.getElementById("descText").innerHTML =
+      "Link to my personal CV for my qualifications.";
+  }
+  function over13() {
+    document.getElementById("descText").innerHTML =
+      "Link to my Github for some other projects.";
+  }
+  function over14() {
+    document.getElementById("descText").innerHTML =
+      "Link to my LinkedIn account. I am not too active there.";
+  }
+  function over15() {
+    document.getElementById("descText").innerHTML =
+      "Link to email me directly. Best form of contact.";
+  }
 
   return (
     <html className={styles.thehtml}>
@@ -56,10 +121,19 @@ const LandingPage = () => {
         <div>
           <div className={styles.titleOne}>MANDO&apos;S DASHBOARD</div>
           <div className={styles.titleTwo}>Explore My Software Projects</div>
+          <div>
+            <p className={styles.titleTwo} id="descText">
+              Hover over projects to read descriptions.
+            </p>
+          </div>
           <div className={styles.buttonHolderDiv}>
             <p>
               <Link href="/overviewEthDashboard">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over1}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faWallet} />
                   &nbsp; CryptoERCDashboard
                 </button>
@@ -67,7 +141,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="/nftDashboard">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over2}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faWallet} />
                   &nbsp; NFTDashboard
                 </button>
@@ -75,7 +153,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="https://testnets.opensea.io/collection/cryptoducks-m2yxnlizh9">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over3}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faScroll} />
                   &nbsp; NFTScriptMint
                 </button>
@@ -84,7 +166,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="https://rinkeby.etherscan.io/token/0x715A8b087f3491f37C481eD5b0D08288F1832EC5">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over4}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faFileContract} />
                   &nbsp; NFTContract
                 </button>
@@ -93,7 +179,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="/coinSite">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over5}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faBitcoinSign} />
                   &nbsp; CryptoToken
                 </button>
@@ -102,7 +192,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="/overviewBscDashboard">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over6}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faWallet} />
                   &nbsp; CryptoBEPDashboard
                 </button>
@@ -111,7 +205,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="https://crypto-dash-api.vercel.app/">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over7}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faCircleInfo} />
                   &nbsp; CryptoAPI
                 </button>
@@ -120,7 +218,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="https://bscscan.com/address/0x3b7d1865c72bb955d523bd39ba85cb290827c451">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over8}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faFileContract} />
                   &nbsp; CryptoBEPContract
                 </button>
@@ -129,7 +231,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="https://rinkeby.etherscan.io/address/0x93a2f07f41a9a61c7602f3618db9d59f1eb01702">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over9}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faFileContract} />
                   &nbsp; CryptoERCContract
                 </button>
@@ -138,16 +244,36 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="/landing">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over10}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faShop} />
                   &nbsp; NFTMarketplace
+                </button>
+              </Link>
+              <ReactNbsp />
+              <ReactNbsp />
+              <Link href="https://doggyventures.ca">
+                <button
+                  onMouseOver={over11}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
+                  <FontAwesomeIcon icon={faPaw} />
+                  &nbsp; My Dog Care Website
                 </button>
               </Link>
             </p>
             <div className="infoButtons">
               <p className={styles.titleThree}>More Details</p>
               <Link href="/Armandoresume.pdf">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over12}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faFile} />
                   &nbsp; Armando CV
                 </button>
@@ -156,7 +282,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="https://github.com/mandocino">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over13}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faCodeBranch} />
                   &nbsp;My Github
                 </button>
@@ -165,7 +295,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="https://www.linkedin.com/in/armando-mancino-81382b170">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over14}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faUserGraduate} />
                   &nbsp;My LinkedIn
                 </button>
@@ -173,7 +307,11 @@ const LandingPage = () => {
               <ReactNbsp />
               <ReactNbsp />
               <Link href="mailto: armando.mancino@outlook.com">
-                <button className={styles.theButtons}>
+                <button
+                  onMouseOver={over15}
+                  onMouseOut={outClear}
+                  className={styles.theButtons}
+                >
                   <FontAwesomeIcon icon={faEnvelope} />
                   &nbsp; Email Me
                 </button>
