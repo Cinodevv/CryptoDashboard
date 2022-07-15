@@ -540,6 +540,7 @@ const LandingPage = () => {
               {aboutStatus}
             </button>
           </div>
+          <br></br>
         </div>
       </body>
       <div className={styles.footer}>
