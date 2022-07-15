@@ -397,7 +397,7 @@ const MandoWeb3Landing = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
                   <ReactNbsp />
-                  Shopping Cart Website - Javascript
+                  Shopping Cart Website - JS
                 </button>
               </Link>
               <ReactNbsp />
