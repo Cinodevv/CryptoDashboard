@@ -2,11 +2,9 @@
 .thehtml {
     background: url("../public/cosmos.jpg") no-repeat center fixed;     
     background-size: cover;
-    background-repeat: no-repeat;
     min-height: 1300px;
     position:fixed;
-    height: 100%;
-    overflow: scroll;
+    overflow-y: hidden;
 -webkit-overflow-scrolling: touch;
 }
 .bodyPage {
