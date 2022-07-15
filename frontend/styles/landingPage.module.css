@@ -2,9 +2,11 @@
 .thehtml {
     background: url("../public/cosmos.jpg") no-repeat center fixed;     
     background-size: cover;
-    position:relative;
+    background-repeat: no-repeat;
+    min-height: 1300px;
+    position:fixed;
     height: 100%;
-    overflow-y: hidden;
+    overflow: scroll;
 -webkit-overflow-scrolling: touch;
 }
 .bodyPage {
@@ -13,18 +15,18 @@
     text-align:center;
 }
 .titleOne {
-    font-size:2.6vw;
+    font-size:3vw;
     color: white;
     text-align:center;
     padding-top: 10px;
 }
 .titleTwo {
-    font-size:2.2vw;
+    font-size:2.4vw;
     color: white;
     text-align:center;
 }
 .titleThree {
-    font-size:2vw;
+    font-size:2.2vw;
     color: white;
     text-align:center;
     padding-top: 25px;
@@ -58,7 +60,7 @@
     background-color:rgba(255, 255, 255, 0.5) ;
 }
 .aboutText{
-    font-size:1.2vw;
+    font-size:1.5vw;
     padding-left: 50px;
     padding-right: 50px;
 }
