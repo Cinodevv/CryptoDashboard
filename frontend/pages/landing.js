@@ -180,7 +180,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faWallet} />
                   <ReactNbsp />
-                  Crypto ERC Dashboard NextJs
+                  Crypto ERC Dashboard - NextJs
                 </button>
               </Link>
               <ReactNbsp />
@@ -194,7 +194,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faWallet} />
                   <ReactNbsp />
-                  NFT Dashboard NextJs
+                  NFT Dashboard - NextJs
                 </button>
               </Link>
               <ReactNbsp />
@@ -208,7 +208,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faScroll} />
                   <ReactNbsp />
-                  NFT Script Mint Python
+                  NFT Script Mint - Python
                 </button>
               </Link>
 
@@ -223,7 +223,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faFileContract} />
                   <ReactNbsp />
-                  NFT Contract
+                  NFT Contract - Solidity
                 </button>
               </Link>
 
@@ -253,7 +253,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faWallet} />
                   <ReactNbsp />
-                  Crypto BEP Dashboard NextJs
+                  Crypto BEP Dashboard - NextJs
                 </button>
               </Link>
 
@@ -268,7 +268,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faCircleInfo} />
                   <ReactNbsp />
-                  Crypto API React
+                  Crypto API - React
                 </button>
               </Link>
 
@@ -283,7 +283,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faFileContract} />
                   <ReactNbsp />
-                  Crypto BEP Contract
+                  Crypto BEP Contract - Solidity
                 </button>
               </Link>
 
@@ -298,7 +298,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faFileContract} />
                   <ReactNbsp />
-                  Crypto ERC Contract
+                  Crypto ERC Contract - Solidity
                 </button>
               </Link>
 
@@ -313,7 +313,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faShop} />
                   <ReactNbsp />
-                  NFT Marketplace NextJs
+                  NFT Marketplace - NextJs
                 </button>
               </Link>
               <ReactNbsp />
@@ -327,7 +327,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faPaw} />
                   <ReactNbsp />
-                  My Dog Care Website Wordpress
+                  My Dog Care Website Wordpress - EasyWP
                 </button>
               </Link>
               <ReactNbsp />
@@ -341,7 +341,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faMessage} />
                   <ReactNbsp />
-                  Forumly NextJs
+                  Forumly - NextJs
                 </button>
               </Link>
               <ReactNbsp />
@@ -355,7 +355,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faHandHoldingHeart} />
                   <ReactNbsp />
-                  Client&apos;s Non-Profit Website EasyWP
+                  Client&apos;s Non-Profit Website - EasyWP
                 </button>
               </Link>
               <ReactNbsp />
@@ -369,7 +369,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
                   <ReactNbsp />
-                  Poker C#
+                  Poker - C#
                 </button>
               </Link>
               <ReactNbsp />
@@ -383,7 +383,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
                   <ReactNbsp />
-                  Space Attack Game JS
+                  Space Attack Game - JS
                 </button>
               </Link>
               <ReactNbsp />
@@ -397,7 +397,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
                   <ReactNbsp />
-                  Shopping Cart Website Javascript
+                  Shopping Cart Website - Javascript
                 </button>
               </Link>
               <ReactNbsp />
@@ -411,7 +411,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
                   <ReactNbsp />
-                  Weather API JS
+                  Weather API - JS
                 </button>
               </Link>
               <ReactNbsp />
@@ -425,7 +425,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
                   <ReactNbsp />
-                  BattleShip Game C# UI
+                  BattleShip Game - C# UI
                 </button>
               </Link>
               <ReactNbsp />
@@ -439,7 +439,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
                   <ReactNbsp />
-                  Theorem Java
+                  Theorem - Java
                 </button>
               </Link>
               <ReactNbsp />
@@ -453,7 +453,7 @@ const LandingPage = () => {
                   <ReactNbsp />
                   <FontAwesomeIcon icon={faCodeBranch} />
                   <ReactNbsp />
-                  File I/O Java
+                  File I/O - Java
                 </button>
               </Link>
               <ReactNbsp />
